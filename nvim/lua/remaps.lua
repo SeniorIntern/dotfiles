@@ -30,3 +30,5 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+local opts = { noremap = true, silent = true }
+vim.keymap.set('n', '<C-o>', '<Cmd>TSToolsOrganizeImports<CR>', opts)
