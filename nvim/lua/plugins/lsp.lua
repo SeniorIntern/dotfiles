@@ -81,6 +81,13 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["html"] = function()
+				-- configure html language server
+				lspconfig["html"].setup({
+					capabilities = capabilities,
+					filetypes = { "html" },
+				})
+			end,
 			["graphql"] = function()
 				-- configure graphql language server
 				lspconfig["graphql"].setup({

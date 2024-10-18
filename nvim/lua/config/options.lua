@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- gives block cursor in insert mode
--- opt.guicursor = ""
+opt.guicursor = ""
 
 -- Sync clipboard between mac OS and Neovim.
 opt.clipboard = "unnamedplus"
