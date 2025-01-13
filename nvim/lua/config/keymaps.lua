@@ -10,6 +10,11 @@ set("n", "<leader>fq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]u
 -- open netrw
 -- set("n", "<leader>ex", vim.cmd.Ex)
 
+-- save without formatting
+vim.keymap.set("n", "<leader>fw", function()
+  vim.cmd("noa w")
+end, { desc = "Save without formatting" })
+
 -- move visual block up, down
 set("v", "J", ":m '>+1<CR>gv=gv")
 set("v", "K", ":m '<-2<CR>gv=gv")
