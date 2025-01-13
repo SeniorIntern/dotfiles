@@ -1,3 +1,5 @@
 font-size = 17
 theme = tokyonight_moon
 font-family = "Geist Mono"
+cursor-style = block
+shell-integration-features = no-cursor
