@@ -1,5 +1,11 @@
-font-size = 17
+font-size = 14
+# theme = ayu
+# theme = GruvboxDark
 theme = tokyonight_moon
+# theme = Solarized Dark - Patched
+# theme = OneHalfDark
 font-family = "Geist Mono"
 cursor-style = block
 shell-integration-features = no-cursor
+# background-opacity = 0.8
+# background-blur = true

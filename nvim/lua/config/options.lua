@@ -1,46 +1,38 @@
-local opt = vim.opt
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
 
--- gives block cursor in insert mode
-opt.guicursor = ""
+vim.opt.guicursor = ""
 
--- Sync clipboard between mac OS and Neovim.
-opt.clipboard = "unnamedplus"
+vim.opt.nu = true
+vim.opt.relativenumber = true
 
---put numbers on the numbers column
-opt.number = true
-opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
+vim.opt.smartindent = true
 
-opt.smartindent = true
+vim.opt.wrap = true
 
-opt.wrap = true
+-- don't do backup. but make undotree aware of long running undos
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 
-opt.swapfile = false
+vim.opt.hlsearch = true -- highlight search results
+vim.opt.incsearch = false
 
--- don't make backup before overwritting file
-opt.backup = false
+vim.opt.termguicolors = true
 
--- save changes in a file incase for later undo
-opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-opt.undofile = true
+-- try to keep at least 8 lines above and below the cursor visible in the window.
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
 
--- time in ms to wait for a keybind to complete
-opt.timeoutlen = 500
+-- fast update time
+vim.opt.updatetime = 50
 
---highlight current search
-opt.hlsearch = true
-
---show search while typing it
-opt.incsearch = true
-
-opt.scrolloff = 8
-
--- time to accept user input
-opt.updatetime = 50
-
--- command line height (status line still stays)
-opt.cmdheight = 0
+vim.opt.colorcolumn = "80"
