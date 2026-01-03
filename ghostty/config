@@ -1,0 +1,8 @@
+font-size = 15
+font-shaping-break = cursor
+theme = TokyoNight Storm
+maximize = true
+cursor-style = block
+shell-integration-features = no-cursor
+cursor-style-blink = false
+mouse-hide-while-typing = true
