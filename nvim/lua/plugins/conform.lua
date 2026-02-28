@@ -12,6 +12,7 @@ return {
 				html = { "prettier" },
 				css = { "prettier" },
 				csss = { "prettier" },
+				json = { "prettier" },
 				python = { "isort", "black" },
 			},
 		})
