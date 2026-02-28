@@ -1,8 +1,10 @@
 local autocmd = vim.api.nvim_create_autocmd
 
-autocmd('LspAttach', {
+autocmd("LspAttach", {
     callback = function(e)
-        local opts = { buffer = e.buf }
-        vim.keymap.set("n", "grd", function() vim.lsp.buf.definition() end, opts)
-    end
+        vim.keymap.set("n", "grd", vim.lsp.buf.definition, {
+            buffer = e.buf,
+            desc = "LSP: Go to Definition",
+        })
+    end,
 })
