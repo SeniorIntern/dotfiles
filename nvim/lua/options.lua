@@ -63,7 +63,7 @@ o.confirm = true
 
 -- Sets window borders to be rounded instead of square.
 -- Only visible in Neovim UI elements (like :help, floating windows, LSP windows).
-o.winborder = "rounded"
+-- o.winborder = "rounded"
 
 -- Enables true color support in the terminal.
 -- Necessary if you use modern color schemes with 24-bit colors.
