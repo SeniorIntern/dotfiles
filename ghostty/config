@@ -1,6 +1,5 @@
-font-size = 16
+font-size = 18
 font-shaping-break = cursor
-theme = onedark_pro
 maximize = true
 cursor-style = block
 shell-integration-features = no-cursor
