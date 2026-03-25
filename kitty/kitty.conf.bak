@@ -8,6 +8,6 @@ macos_option_as_alt yes
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Material Dark Soft
+# Gruvbox Material Dark Medium
 include current-theme.conf
 # END_KITTY_THEME
